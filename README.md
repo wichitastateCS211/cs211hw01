@@ -18,6 +18,7 @@ Please enter the number of
         Nickels: 2
         Pennies: 2
 You have 82 cents.
+
 Please enter the number of
         Quarters: 2
 Dimes: -3
@@ -26,6 +27,7 @@ Nickels: 2
         Pennies: -1
 Negative pennies treated like 0.
 You have 60 cents.
+
 Please enter the number of
         Quarters: 1
         Dimes: 0
@@ -35,7 +37,9 @@ You have 25 cents.
 ```
 
 ## Hints
-**General hint:** Keep your homework assignments; revisiting them after learning new principles
+- Because automated inputs and outputs are used, you must match the text and spacing exactly.
+  - A tab is placed before the name of each coin.
+- **General hint:** Keep your homework assignments; revisiting them after learning new principles
 can reveal other ways to complete the homework.
 
 ## Reminders
