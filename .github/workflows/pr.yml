@@ -1,0 +1,33 @@
+name: learn-github-actions
+on: [pull_request]
+jobs:
+  add-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: List files
+        run: ls -alh
+      - name: Log submission time
+        run: echo "Submitted at " $(date)
+      - name: Compilation
+        run: ./.github/scripts/compile_script.sh "${pwd}"
+        shell: bash
+      - name: First test
+        run: ./submission < .github/scripts/inputs01 2>&1
+      - name: Second test
+        run: ./submission < .github/scripts/inputs02 2>&1
+      - name: Third test
+        run: ./submission < .github/scripts/inputs03 2>&1
+      - name: Fourth test
+        run: ./submission < .github/scripts/inputs04 2>&1
+      - name: Fifth test
+        run: ./submission < .github/scripts/inputs05 2>&1
+      - name: Sixth test
+        run: ./submission < .github/scripts/inputs06 2>&1
+      - name: Seventh test
+        run: ./submission < .github/scripts/inputs07 2>&1
+      - name: Eighth test
+        run: ./submission < .github/scripts/inputs08 2>&1
+      - name: Ninth test
+        run: ./submission < .github/scripts/inputs09 2>&1
